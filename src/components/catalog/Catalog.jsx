@@ -10,13 +10,11 @@ const Catalog = () => {
 
 
     const getItems = async() => {
+            const response = await axios.get("https://exta-back.onrender.com/api/items")
 
+            const {data} = response
 
-        // const response = axios.get("http://localhost:3001/items")
-
-        // const { data } = await response
-        
-        // setItems(data)
+            setItems(data)
         }
 
     useEffect(()=>{
