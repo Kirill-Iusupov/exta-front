@@ -6,7 +6,7 @@ const MainPage = () => {
     return (
         <div>
             <Wrapper>
-                <Catalog />
+                <Catalog /> 
             </Wrapper>
         </div>
     );

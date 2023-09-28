@@ -1,19 +1,17 @@
 import React from 'react';
+import Contacts from '../contacts/Contacts';
+import Logo from '../logo/Logo';
 import Wrapper from '../wrapper/Wrapper';
-import styles from './header.module.scss';
 
 
 const Header = () => {
     return (
         <div>
-            <Wrapper className={'flex'} >
+            <Wrapper >
                 <div className='border-[5px] border-t-[0] border-solid border-[#C23594]  rounded-b-[25px] flex items-center justify-between p-[15px] bg-[black]'>
-                    <span className={`${styles.logo}`} />
-                    <h2>"Для моментов страсти и близости"</h2>
-                    <div className='text-end'>
-                        <p>+996 (558) 69-00-69</p>
-                        <p>+996 (222) 69-00-69</p>
-                    </div>
+                    <Logo />
+                    <h2 className='text-3xl font-serif dark:text-white'>"Для моментов страсти и близости"</h2>
+                    <Contacts />
                 </div>
             </Wrapper>
         </div>

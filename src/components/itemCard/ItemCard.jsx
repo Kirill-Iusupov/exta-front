@@ -10,7 +10,6 @@ const ItemCard = ( {item} ) => {
             <img src={item.img} alt="img" className='w-[120px] h-[120px]'/>
             <div className='w-[220px] '>
                 <p>Название: {item.title}</p>
-                <p>Описание: {item.description}</p>
                 <p>Цена: {item.price}c</p>
             </div>
           </div>
