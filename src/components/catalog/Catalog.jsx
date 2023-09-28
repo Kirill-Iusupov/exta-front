@@ -2,6 +2,8 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import ItemCard from '../itemCard/ItemCard';
+import {Dna} from "react-loader-spinner"
+
 
 
 const Catalog = () => {
@@ -22,10 +24,17 @@ const Catalog = () => {
     },[])
 
 
-
+    
     return (
         <div className='flex flex-wrap justify-around'>
-            {!items ? <h1>Loading..</h1>
+            {!items ? <Dna 
+                    visible={true}
+                    height="150"
+                    width="150"
+                    ariaLabel="dna-loading"
+                    wrapperStyle={{}}
+                    wrapperClass="dna-wrapper"
+                />
             :
                 items.map( item => <ItemCard key= {item.id} item={item}/> )
             }

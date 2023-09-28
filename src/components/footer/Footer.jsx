@@ -6,7 +6,7 @@ import Logo from '../logo/Logo';
 
 const Footer = () => {
     return (
-        <div>
+        <div className=''>
             <Wrapper>
                 <div className='border-[5px] border-b-[0] border-solid border-[#C23594] rounded-t-[25px] flex items-center justify-around p-[15px] bg-[black]'>
                     <Contacts />
