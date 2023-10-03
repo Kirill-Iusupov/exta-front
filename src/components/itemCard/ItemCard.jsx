@@ -2,8 +2,6 @@ import React from 'react';
 
 const ItemCard = ( {item} ) => {
 
-    console.log(item);
-
     return (
         <>
           <div className='flex justify-between items-center my-[15px] w-[380px] p-[10px] border-[3px] border-[#C23594] rounded-[15px] hover:border-[#fff]'>
